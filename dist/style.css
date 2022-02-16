@@ -10,6 +10,7 @@ html {
 
 body {
   margin: 0;
+  color: #ffffff;
 }
 
 a {
@@ -57,7 +58,6 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #ffffff;
   text-align: center;
 }
 
@@ -74,7 +74,6 @@ a:hover {
 #orderBtn {
   background-color: #fcd13f;
   border: 1px solid #fcd13f;
-  color: #ffffff;
   font-family: serif;
   font-size: 25px;
   padding: 5px 30px;
@@ -82,7 +81,6 @@ a:hover {
 
 #footer {
   background-color: #1c1c1c;
-  color: #ffffff;
   display: flex;
   justify-content: center;
 }
@@ -137,7 +135,6 @@ a:hover {
 #emailSubmit {
   background-color: #fcd13f;
   border: 1px solid #fcd13f;
-  color: #f5f5f5;
   font-family: serif;
   font-size: 20px;
   padding: 8px 10px;
@@ -146,7 +143,7 @@ a:hover {
 
 #orderBtn:hover,
 #emailSubmit:hover {
-  background-color: #fbce35;
-  border: 1px solid #fbce35;
+  background-color: #fcd03ff6;
+  border: 1px solid #fcd03ff6;
   cursor: pointer;
 }
