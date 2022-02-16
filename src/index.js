@@ -1,1 +1,3 @@
-console.log('Restaurant');
+import init from './modules/start';
+
+init();
