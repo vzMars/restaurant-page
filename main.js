@@ -1,1 +1,1 @@
-console.log("Restaurant Page");
+console.log("Restaurant");
