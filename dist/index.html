@@ -4,9 +4,65 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
     <title>Restaurant Page</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="content"></div>
+    <div id="content">
+      <header id="header">
+        <nav id="navbar">
+          <img id="restaurant-logo" src="./images/logo.png" />
+          <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main id="home-content">
+        <h1 id="home-heading">Artichoke Basille's Pizza</h1>
+        <p id="home-text">
+          Pizzaiolos, cousins and best friends, Francis Garcia and Sal Basille,
+          are two regular guys from the neighborhood, whose DNA reads garlic and
+          oil. They are fourth generation restaurateurs.
+        </p>
+        <button id="orderBtn">Order Now</button>
+      </main>
+
+      <footer id="footer">
+        <div id="wrapper">
+          <div id="footer-items">
+            <section class="footer-section">
+              <h3 class="footer-heading">Artichoke Basille's Pizza</h3>
+              <p class="footer-text">
+                Their never-ending line of devoted Artichoke Pizza fans include
+                many celebrities, but most importantly, it draws from legions of
+                native New Yorkers.
+              </p>
+            </section>
+            <section class="footer-section">
+              <h3 class="footer-heading">Contact</h3>
+              <p class="footer-text">Phone: (212) 228-2004</p>
+              <p class="footer-text">Hours: Everyday from 11AM-5AM</p>
+              <p class="footer-text">
+                Address: 321 E 14th St, New York, NY 10003
+              </p>
+            </section>
+            <section class="footer-section" id="subForm">
+              <h3 class="footer-heading">Subscribe</h3>
+              <input
+                id="emailInput"
+                type="text"
+                placeholder="Email address"
+                name="mail"
+              />
+              <input id="emailSubmit" type="submit" value="Subscribe" />
+            </section>
+          </div>
+        </div>
+      </footer>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>

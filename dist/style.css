@@ -1,0 +1,152 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #f5f5f5;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+#navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#restaurant-logo {
+  width: 40%;
+  height: auto;
+  padding: 10px;
+}
+
+#navbar .links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+#home-content {
+  margin-top: -100px;
+  height: 100vh;
+  overflow: hidden;
+  background: url(./images/store.jpeg), rgba(0, 0, 0, 0.6);
+  background-blend-mode: darken;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+}
+
+#home-heading {
+  font-size: 80px;
+  margin: 0;
+}
+
+#home-text {
+  max-width: 500px;
+  font-size: 30px;
+}
+
+#orderBtn {
+  background-color: #fcd13f;
+  border: 1px solid #fcd13f;
+  color: #ffffff;
+  font-family: serif;
+  font-size: 25px;
+  padding: 5px 30px;
+}
+
+#footer {
+  background-color: #1c1c1c;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+#wrapper {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  min-height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#footer-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer-section {
+  width: 300px;
+}
+
+.footer-heading {
+  font-size: 25px;
+}
+
+.footer-text {
+  font-size: 20px;
+}
+
+#subForm {
+  display: flex;
+  flex-direction: column;
+}
+
+::placeholder {
+  color: #ffffff;
+}
+
+#emailInput {
+  background-color: #818181;
+  border: 1px solid #818181;
+  font-family: serif;
+  font-size: 20px;
+  padding: 8px 10px;
+  margin-bottom: 20px;
+}
+
+#emailSubmit {
+  background-color: #fcd13f;
+  border: 1px solid #fcd13f;
+  color: #f5f5f5;
+  font-family: serif;
+  font-size: 20px;
+  padding: 8px 10px;
+  margin-bottom: 20px;
+}
+
+#orderBtn:hover,
+#emailSubmit:hover {
+  background-color: #fbce35;
+  border: 1px solid #fbce35;
+  cursor: pointer;
+}
