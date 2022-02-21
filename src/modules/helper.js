@@ -12,11 +12,18 @@ function createP(text, className) {
   return p;
 }
 
-function createButton(text, id) {
+function createButton(text, className) {
   const button = document.createElement('button');
-  button.id = id;
+  button.className = className;
   button.textContent = text;
   return button;
+}
+
+function createSpan(text, className) {
+  const span = document.createElement('span');
+  span.className = className;
+  span.textContent = text;
+  return span;
 }
 
 function createInput(text, id, inputType) {
@@ -32,4 +39,4 @@ function createInput(text, id, inputType) {
   return input;
 }
 
-export { createHeading, createP, createButton, createInput };
+export { createHeading, createP, createButton, createInput, createSpan };

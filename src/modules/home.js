@@ -2,11 +2,18 @@ import { createHeading, createP, createButton } from './helper';
 
 function createHome() {
   const main = document.createElement('main');
+  const mainImg = document.createElement('div');
+
+  main.className = 'main';
   main.id = 'home-content';
-  main.appendChild(
+  mainImg.className = 'img-main';
+  mainImg.id = 'img-home';
+
+  main.appendChild(mainImg);
+  mainImg.appendChild(
     createHeading(`Artichoke Basille's Pizza`, 'home-heading', 'h1')
   );
-  main.appendChild(
+  mainImg.appendChild(
     createP(
       `Pizzaiolos, cousins and best friends, Francis Garcia and Sal Basille,
   are two regular guys from the neighborhood, whose DNA reads garlic and
@@ -14,7 +21,7 @@ function createHome() {
       'home-text'
     )
   );
-  main.appendChild(createButton(`Order Now`, 'orderBtn'));
+  mainImg.appendChild(createButton(`Order Now`, 'orderBtn'));
   return main;
 }
 

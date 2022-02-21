@@ -46,11 +46,10 @@ a:hover {
   gap: 15px;
 }
 
-#home-content {
+.img-main {
   margin-top: -100px;
-  height: 100vh;
   overflow: hidden;
-  background: url(./images/store.jpeg), rgba(0, 0, 0, 0.6);
+  background: url(./images/store.png), rgba(0, 0, 0, 0.6);
   background-blend-mode: darken;
   background-position: center;
   background-repeat: no-repeat;
@@ -60,6 +59,14 @@ a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+#img-home {
+  height: 100vh;
+}
+
+#img-menu {
+  height: 50vh;
 }
 
 .home-heading {
@@ -72,12 +79,115 @@ a:hover {
   font-size: 30px;
 }
 
-#orderBtn {
+.orderBtn,
+.menu-item-btn,
+.menu-btn-more {
   background-color: #fcd13f;
   border: 1px solid #fcd13f;
   font-family: serif;
   font-size: 25px;
   padding: 5px 30px;
+}
+
+#menu-content {
+  background-color: #00000015;
+}
+
+#menu {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000000;
+}
+
+#menu-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  text-align: center;
+}
+
+.menu-heading {
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+.menu-text {
+  font-size: 23px;
+  margin-bottom: 0;
+}
+
+hr {
+  background-color: #fcd13f;
+  border: none;
+  width: 140px;
+  height: 5px;
+  margin-bottom: 100px;
+}
+
+#menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.menu-item {
+  background-color: #ffffff;
+  box-shadow: 5px 5px 10px #00000012;
+  width: 280px;
+  height: 390px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-item-info {
+  margin: 0 auto;
+  width: 220px;
+}
+
+.menu-item-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-item-img {
+  object-fit: scale-down;
+  width: 250px;
+  height: 200px;
+  margin-bottom: 5px;
+}
+
+.menu-item-heading {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.menu-item-price {
+  padding: 5px 10px;
+  font-size: 20px;
+  background-color: #fcd13f;
+}
+
+.menu-item-text {
+  font-size: 16px;
+  margin: 10px auto;
+}
+
+.menu-item-btn {
+  font-size: 20px;
+  padding: 5px 5px;
+}
+
+.menu-btn-more {
+  margin-top: 100px;
+  margin-bottom: 40px;
 }
 
 #footer {
@@ -142,8 +252,10 @@ a:hover {
   margin-bottom: 20px;
 }
 
-#orderBtn:hover,
-#emailSubmit:hover {
+.orderBtn:hover,
+#emailSubmit:hover,
+.menu-item-btn:hover,
+.menu-btn-more {
   background-color: #fcd03ff6;
   border: 1px solid #fcd03ff6;
   cursor: pointer;

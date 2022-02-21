@@ -1,3 +1,5 @@
+import Logo from '../images/logo.png';
+
 function createHeader() {
   const header = document.createElement('header');
 
@@ -17,10 +19,9 @@ function createNavbar() {
 }
 
 function createLogo() {
-  const logo = document.createElement('img');
-
+  const logo = new Image();
   logo.id = 'restaurant-logo';
-  logo.src = './images/logo.png';
+  logo.src = Logo;
 
   return logo;
 }
@@ -33,6 +34,7 @@ function createLinks() {
     const linkItem = document.createElement('li');
     const link = document.createElement('a');
     link.textContent = navLinks[i];
+    link.id = navLinks[i];
     linkItem.appendChild(link);
     links.appendChild(linkItem);
   }
