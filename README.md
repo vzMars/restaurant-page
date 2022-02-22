@@ -9,4 +9,4 @@ A restaurant page dynamically rendered using DOM manipulation. The HTML file con
 - JavaScript
 - Webpack
 
-<img src = "images/home.png">
+<img src = "./src/images/home.png">
