@@ -18,7 +18,9 @@ function createMenu() {
   mainImg.id = 'img-menu';
 
   main.appendChild(mainImg);
-  mainImg.appendChild(createHeading(`Pizza`, 'home-heading', 'h1'));
+  mainImg.appendChild(
+    createHeading(`Choose according to your taste`, 'home-heading', 'h1')
+  );
 
   main.appendChild(createContainer());
   return main;

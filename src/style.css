@@ -65,7 +65,8 @@ a:hover {
   height: 100vh;
 }
 
-#img-menu {
+#img-menu,
+#img-contact {
   height: 50vh;
 }
 
@@ -190,6 +191,66 @@ hr {
   margin-bottom: 40px;
 }
 
+#contact {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  color: #000000;
+}
+
+#address-header,
+#form-header {
+  max-width: 500px;
+  text-align: left;
+}
+
+.address-heading,
+.form-heading {
+  font-size: 40px;
+  margin-top: 40px;
+  margin-bottom: 5px;
+}
+
+#contact hr {
+  margin: 20px 0;
+  margin-top: 0;
+  width: 340px;
+}
+
+.contact-text {
+  font-size: 20px;
+}
+
+.contact-address-img {
+  object-fit: scale-down;
+  width: 530px;
+  height: 440px;
+  margin-bottom: 40px;
+}
+
+#contact-form {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactText {
+  margin: 0;
+}
+
+.contactInput {
+  margin-bottom: 20px;
+  padding: 8px 10px;
+}
+
+#largeText {
+  height: 240px;
+}
+
+#nameInput,
+#mailInput,
 #footer {
   background-color: #1c1c1c;
   display: flex;
@@ -234,7 +295,7 @@ hr {
   color: #ffffff;
 }
 
-#emailInput {
+.emailInput {
   background-color: #818181;
   border: 1px solid #818181;
   font-family: serif;
@@ -243,7 +304,8 @@ hr {
   margin-bottom: 20px;
 }
 
-#emailSubmit {
+.emailSubmit,
+.contactSubmit {
   background-color: #fcd13f;
   border: 1px solid #fcd13f;
   font-family: serif;
@@ -253,9 +315,10 @@ hr {
 }
 
 .orderBtn:hover,
-#emailSubmit:hover,
+.emailSubmit:hover,
 .menu-item-btn:hover,
-.menu-btn-more {
+.menu-btn-more:hover,
+.contactSubmit:hover {
   background-color: #fcd03ff6;
   border: 1px solid #fcd03ff6;
   cursor: pointer;

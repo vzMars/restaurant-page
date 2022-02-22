@@ -26,15 +26,16 @@ function createSpan(text, className) {
   return span;
 }
 
-function createInput(text, id, inputType) {
+function createInput(text, className, inputType) {
   const input = document.createElement('input');
-  input.id = id;
+  input.className = className;
   input.type = inputType;
   if (inputType === 'submit') {
     input.value = text;
   } else if (inputType === 'text') {
-    input.placeholder = text;
-    input.name = 'mail';
+    if (text !== '') {
+      input.placeholder = text;
+    }
   }
   return input;
 }

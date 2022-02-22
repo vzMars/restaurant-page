@@ -27,7 +27,7 @@ function createLogo() {
 }
 
 function createLinks() {
-  const navLinks = ['Home', 'Menu', 'About', 'Contact'];
+  const navLinks = ['Home', 'Menu', 'Contact'];
   const links = document.createElement('ul');
   links.className = 'links';
   for (let i = 0; i < navLinks.length; i++) {
